@@ -1,0 +1,137 @@
+/* START ***********************************************************************************************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px*/
+    text-align: center;
+    background-color: var(--geral-background-color);
+}
+
+/* VAR COLORS *****************************************************************************************/
+:root {
+--hue: 120;
+--geral-background-color: hsl(var(--hue), 40%, 90%);
+--title-color: hsl(var(--hue), 20%, 30%);
+--paragraph: hsl(calc(var(--hue) - 20), 100%, 30%);
+--nav-menu: hsl(var(--hue),40%, 90%);
+--nav-height-color: hsl(var(--hue), 70%, 50%);
+--filial-color: hsl(var(--hue), 80%, 80%);
+
+--nav-height: 7rem;
+}
+
+/*FONTES **************************************************************************************************/
+h1 { /*Títulos ref. a sessões da pag.*/
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 3.0rem;
+    text-align: left;
+    padding: 0 10.0rem;
+    letter-spacing: 0.2rem;
+    height: auto;
+    color: var(--title-color);
+}
+
+h2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 0 10.0rem;
+    letter-spacing: 0.2rem;
+    height: auto;
+    color: var(--title-color);
+}
+
+h3 { /*Título das noíticas*/
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 2.8rem;
+    text-align: left;
+    padding: 0 10.0rem;
+    letter-spacing: 0.2rem;
+    height: auto;
+    color: var(--title-color);
+}
+
+p {
+    font-family: Verdana, Tahoma, sans-serif;
+    line-height: 1.6rem;
+    margin-top: 1.0rem;
+    text-align: justify;
+    font-weight: normal;
+    font-size: small;
+    color: var(--paragraph);
+}
+
+/* NAVBAR *********************************************************************************************/
+.logo {
+   width: 2rem;
+   height: 2rem;
+}
+
+a {
+    color: var(--nav-menu);
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+h1 nobr {
+    font-size: 0.8rem;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+.navi {
+    color: var(--filial-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+    background: var(--nav-height-color);
+    height: var(--nav-height);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-list {
+    display: inline;
+    display: flex;
+    list-style: none;
+    height: 1rem;
+    padding: 0 30rem 0 0;
+    font-size: 1.5rem;
+}
+
+.nav-list li {
+  letter-spacing: 0.2rem;
+  margin-left: 2rem;
+}
+
+/* TABELA DE NOTÍCIAS ********************************************************************************/
+table {
+    font-size: 1.0rem;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    padding: 5rem 50.0rem 0 0;
+}
+
+.imagemdatabela {
+    display: flex;
+    width: 30rem;
+    height: 30rem;
+    flex-direction: column;
+    display: flex;
+    margin-left: 8.0rem;
+    padding: 4rem;
+}
+
+/******************************************************************************************************/
