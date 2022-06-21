@@ -6,7 +6,7 @@
 } 
 
 :root {
-    font-size: 62.5%; /* 1rem = 10px*/
+    font-size: 62.5%; /* 1rem = 10px */
     text-align: center;
     background-color: var(--geral-background-color);
 }
@@ -21,7 +21,7 @@
 --nav-height-color: hsl(var(--hue), 70%, 50%);
 --filial-color: hsl(var(--hue), 80%, 80%);
 
---nav-height: 7rem;
+--nav-height: 4rem;
 }
 
 /*FONTES **************************************************************************************************/
@@ -55,6 +55,17 @@ h3 { /*Título das noíticas*/
     color: var(--title-color);
 }
 
+h4 {
+    text-align: right;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.0rem;
+    text-align: left;
+    padding: 0 10.0rem;
+    letter-spacing: 0.2rem;
+    height: auto;
+    color: var(--title-color)
+}
+
 p {
     font-family: Verdana, Tahoma, sans-serif;
     line-height: 1.6rem;
@@ -67,8 +78,8 @@ p {
 
 /* NAVBAR *********************************************************************************************/
 .logo {
-   width: 2rem;
-   height: 2rem;
+   width: 5rem;
+   height: 3rem;
 }
 
 a {
@@ -106,14 +117,13 @@ nav {
     display: inline;
     display: flex;
     list-style: none;
-    height: 1rem;
-    padding: 0 30rem 0 0;
+    height: 2rem;
+    padding: 0 20rem 0 0;
     font-size: 1.5rem;
 }
 
 .nav-list li {
-  letter-spacing: 0.2rem;
-  margin-left: 2rem;
+    margin-left: 2rem;
 }
 
 /* TABELA DE NOTÍCIAS ********************************************************************************/
@@ -121,7 +131,7 @@ table {
     font-size: 1.0rem;
     align-items: center;
     margin-bottom: 2.4rem;
-    padding: 5rem 50.0rem 0 0;
+    padding: 8rem 30.0rem 0 0;
 }
 
 .imagemdatabela {
@@ -134,4 +144,53 @@ table {
     padding: 4rem;
 }
 
-/******************************************************************************************************/
+/* REDACAONOTICIAS*****************************************************************************************************/
+
+.RedacaoNoticia {
+    padding: 8rem 15.0rem;
+}
+
+.RedacaoNoticia h1{
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.RedacaoNoticia h2{
+    text-align: center;
+    padding: 1rem 0 0 0;
+    font-size: 1.8rem;
+}
+
+.RedacaoNoticia h4 {
+    text-align: right;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.0rem;
+    padding: 5rem 10.0rem;
+    letter-spacing: 0.2rem;
+    height: auto;
+    color: var(--title-color)
+}
+
+.Textodireita {
+    font-size: 1.0rem;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    padding: 0rem 0rem 0rem 10rem;
+}
+
+.ImagemDeCabecalho {
+    width: 100rem;
+    padding: 0 0 0 2rem;
+    height: 30rem;
+}
+
+.Textoaoladodaimagem {
+    padding: 0;
+}
+
+.ImagensDaNoticia {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    
+}
